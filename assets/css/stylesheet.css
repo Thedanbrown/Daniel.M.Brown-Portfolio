@@ -1,0 +1,146 @@
+
+:root {
+    --Dark: #283145;
+    --steel-Blue: #3f80b9;
+    --light-blue: #aef8f4;
+    --malibu-blue: #73c9f8;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.space {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 1px;
+    background-image: url("../images/SPACE\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-image:  linear-gradient(#283145, #3f80b9, #73c9f8, #aef8f4);
+    Font-size: 24px;
+    font-family: 'Aclonica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+
+}
+main {
+    background-image:  linear-gradient(#283145, #3f80b9, #73c9f8);
+}
+
+.header {
+    margin-bottom: 2px;
+    padding: 20px;
+    font-family: 'Aclonica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--Dark);
+    color: var(--light-blue) !important;
+}
+
+.header h1 {
+    display: inline-flex;
+    font-size: 48px;
+}
+
+.header h1 .m {
+    color: var(--malibu-blue);
+}
+
+.header img {
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 75px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 25px;
+    float: right;
+    font-family: 'Aclonica', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-flex;
+    flex: wrap;
+    margin-left: 25px;
+}
+
+nav a:link {
+    color: var(--steel-Blue);
+  background: var(--light-blue);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav a:visited {
+    color: var(--Dark);
+}
+
+content {
+    display: flex;
+}
+main section {
+    display:flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 2px, #283145;
+}
+
+section h2 {
+    display:flex;
+    border-right-color: #283145;
+    border-right: 15px;
+}
+
+.about {
+    display: flex;
+    Margin: 3px;
+    padding: 10px;
+
+}
+.work {
+    display:flex;
+}
+
+.work a {
+    flex-wrap: wrap;
+}
+h2 {
+    color: var(--light-blue)
+
+}
+
+.section p {
+    display:inline;
+}
+
+@media screen and (max-width: 1024px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
