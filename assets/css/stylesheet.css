@@ -1,4 +1,5 @@
 
+/* setting some color values to use throughout */
 :root {
     --Dark: #283145;
     --steel-Blue: #3f80b9;
@@ -19,7 +20,7 @@ body {
     font-family: 'Aclonica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--light-blue);
 }
-
+/* background image to set a tone before content */
 .space {
     height: 400px;
     width: 100%;
@@ -33,7 +34,7 @@ main {
    
 }
 
-
+/* setting the header into a flexbox and setting font and colors fir header */
 .header {
     display: flex;
     justify-content:space-around;
@@ -42,14 +43,14 @@ main {
     padding: 20px;
     font-family: 'Aclonica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--Dark);
-    color: var(--light-blue) !important;
+    color: var(--light-blue)
 }
 
 .header h1 {
     display: inline-flex;
     font-size: 48px;
 }
-
+/* gives a differnt color option for selected text in name */
 .header h1 .m {
     color: var(--malibu-blue);
 }
@@ -67,7 +68,7 @@ nav {
     font-family: 'Aclonica', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* all these nav style the various links on the page */
 nav ul {
     list-style-type: none;
 }
@@ -110,17 +111,17 @@ h2 {
     color: var(--steel-Blue)
 
 }
-
+/* sets the first work project link to a larger size than the rest */
 .main-work {
     max-height: 300px;
     max-width: 300px;
 }
-
+/*sets other link works to a smaller size */
 .secondary-works {
     max-height: 200px;
     max-width: 200px;
 }
-
+/*floats the fig caption over the image slightly */
 section figcaption {
     position: relative;
     max-width: 100px;
@@ -141,7 +142,7 @@ section figcaption {
     background-position: center;
   }
 
-
+/* adjusts contents for use on multiple screen sizes */
 @media screen and (max-width: 1024px) {
     main,
     nav {
