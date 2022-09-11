@@ -22,7 +22,7 @@ body {
 }
 /* background image to set a tone before content */
 .space {
-    height: 400px;
+    height: 200px;
     width: 100%;
     margin-bottom: 1px;
     background-image: url("../images/SPACE\ 3.jpg");
@@ -39,6 +39,7 @@ main {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
+    align-items: baseline;
     margin-bottom: 3px;
     padding: 20px;
     font-family: 'Aclonica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -57,13 +58,15 @@ main {
 
 .header img {
     display:inline-flex;
+    align-items: baseline;
     height: 100px;
     width: 100px;
     border-radius: 75px;
 }
 
+
 nav {
-    padding-top: 50px;
+    padding: 15px;
     margin-right: 25px;
     font-family: 'Aclonica', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -80,7 +83,7 @@ nav ul li {
     margin-left: 25px;
 }
 
-nav a:link {
+nav a {
     color: var(--steel-Blue);
   background: var(--light-blue);
   border-radius: 5px;
@@ -91,26 +94,33 @@ nav a:visited {
     color: var(--Dark);
 }
 
+.contents section {
+    margin: none;
+    Border-style: solid;
+}
+
 .about {
     display: flex;
     justify-content: space-between;
-    Margin: 3px;
-    padding: 10px;
-
+    align-items: baseline;
+    padding: 20px;
 }
+
+section p {
+    margin-left: 30px;
+}
+
 .work {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 3px;
+    align-items: baseline;
     padding: 10px;
+    
 }
 
-h2 {
-    color: var(--steel-Blue)
 
-}
 /* sets the first work project link to a larger size than the rest */
 .main-work {
     max-height: 300px;
@@ -133,12 +143,18 @@ section figcaption {
     font-size: 12px;
   }
 
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   footer {
     height: 75px;
     width: 100%;
     margin-top: 3px;
     background-image: linear-gradient(#283145,#3f80b9,#73c9f8,#aef8f4);
-    background-size: cover;
+    background-size:auto;
     background-position: center;
   }
 
